@@ -23,20 +23,32 @@
     );
 }
 
+h1 {
+    margin-inline: 30px;
+    text-align: center;
+}
 form {
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 30px;
     border-radius: 30px;
-    position: relative;
     background: rgba(0, 0, 0, 0.3);
-    /* backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); */
+    margin-inline: 30px;
 }
 
 .buttons {
     display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.buttons div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
@@ -46,25 +58,29 @@ button {
 }
 
 form p {
-    font-size: 20px;
+    font-size: 26px;
+
     color: white;
 }
 
+b {
+    color: white;
+    font-weight: 600;
+    background-color: rgb(94, 177, 255);
+    padding-inline: 10px;
+    border-radius: 6px;
+}
+
 input {
-    display: block;
-    /* margin-bottom: 20px; */
+    display: flex;
     background: transparent;
     background: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
     border: 0px;
     padding: 10px;
-    /* backdrop-filter: blur(1px);
-    -webkit-backdrop-filter: blur(1px); */
-    /* outline-style: none; */
 }
 input:focus {
     outline: none;
-    /* border: 1px solid tomato; */
 }
 
 button {
@@ -74,8 +90,14 @@ button {
     border: 0px;
     background: whitesmoke;
 }
-button:nth-last-child(2),
-button:nth-last-child(1) {
+button:hover {
+    background: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+.reset button {
     background: tomato;
     color: white;
+}
+.reset button:hover {
+    background: rgba(255, 0, 0, 0.7);
 }
