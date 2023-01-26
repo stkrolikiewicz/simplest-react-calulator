@@ -1,7 +1,7 @@
 # Simplest React Calculator
 
 ## Description
-A React calculator app with plus, minus, multiply and dive options.
+A React calculator app with plus, minus, multiply and divide options.
 
 ![SimplestCalculator](https://user-images.githubusercontent.com/46401055/214821900-a6d0aca3-bb40-4256-809d-8b1fa66aaebe.JPG)
 
